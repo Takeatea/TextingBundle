@@ -32,6 +32,8 @@ class TakeateaTextingExtension extends Extension
         $container->setParameter('takeatea.texting.manager.class', $config['manager']['class']);
 
         $loader = new XmlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
-        $loader->load('services.xml');
+        $loader->load('http_client.xml');
+        $loader->load('manager.xml');
+        $loader->load('provider.xml');
     }
 }

@@ -22,7 +22,7 @@ class TextingCompilerPass implements CompilerPassInterface
         }
 
         $definition = $container->getDefinition('takeatea.texting.manager');
-        $providers = $container->findTaggedServiceIds('takeatea.texting.provider');
+        $providers = $container->findTaggedServiceIds('takeatea_texting.provider');
         $providersId = array_keys($providers);
 
         foreach ($providersId as $id) {
