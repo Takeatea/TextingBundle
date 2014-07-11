@@ -1,0 +1,26 @@
+{
+    "name": "takeatea/texting-bundle",
+    "type": "symfony-bundle",
+    "keywords": ["sms", "texting", "takeatea"],
+    "homepage": "http://www.takeatea.com",
+    "licence": "MIT",
+    "authors": [
+        {
+            "name": "Xavier Coureau",
+            "email": "xav@takeatea.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2",
+        "symfony/framework-bundle": "~2.1",
+        "takeatea/texting": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {"Takeatea\\TextingBundle\\": "" }
+    },
+    "target-dir": "Takeatea/TextingBundle",
+    "minimum-stability": "dev"
+}
