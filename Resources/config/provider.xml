@@ -5,18 +5,37 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <parameters>
+        <parameter key="takeatea.texting.provider.alway_ok.class">Takeatea\Component\Texting\Provider\AlwaysOkProvider</parameter>
+        <parameter key="takeatea.texting.provider.alway_ko.class">Takeatea\Component\Texting\Provider\AlwaysKoProvider</parameter>
         <parameter key="takeatea.texting.provider.all_my_sms.class">Takeatea\Component\Texting\Provider\AllMySmsProvider</parameter>
+        <parameter key="takeatea.texting.provider.sms_envoi.class">Takeatea\Component\Texting\Provider\SmsEnvoiProvider</parameter>
     </parameters>
 
     <services>
         <service id="takeatea.texting.manager" class="%takeatea.texting.manager.class%"/>
 
-        <service id="takeatea.texting.provider.all_my_sms" class="%takeatea.texting.provider.all_my_sms.class%">
+        <service id="takeatea.texting.provider.alway_ok" class="%takeatea.texting.provider.alway_ok.class%" public="false">
+            <tag name="takeatea_texting.provider"/>
+        </service>
+        <service id="takeatea.texting.provider.alway_ko" class="%takeatea.texting.provider.alway_ko.class%" public="false">
+            <tag name="takeatea_texting.provider"/>
+        </service>
+        <!--service id="takeatea.texting.provider.all_my_sms" class="%takeatea.texting.provider.all_my_sms.class%" public="false">
             <tag name="takeatea_texting.provider"/>
 
-            <argument>login</argument>
-            <argument>password</argument>
+            <argument>%all_my_sms_login%</argument>
+            <argument>%all_my_sms_password%</argument>
             <argument type="service" id="takeatea.texting.http_client"/>
-        </service>
+        </service
+        <service id="takeatea.texting.provider.sms_envoi" class="%takeatea.texting.provider.sms_envoi.class%" public="false">
+            <tag name="takeatea_texting.provider"/>
+
+            <argument>%sms_envoi_email%</argument>
+            <argument>%sms_envoi_api_key%</argument>
+            <argument type="service" id="takeatea.texting.http_client"/>
+            <argument type="collection">
+                <argument key="senderlabel">%sms_envoi_sender_label%</argument>
+            </argument>
+        </service-->
     </services>
 </container>
