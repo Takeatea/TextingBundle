@@ -40,7 +40,7 @@ As you can see, providers should be declared as private services. Also, using th
 
 For further informations, read the [texting component documentation]
 
-### Usage
+## Usage
 You can now have access to the manager. Exemple in a controller :
 
     <?php
@@ -52,7 +52,7 @@ You can now have access to the manager. Exemple in a controller :
 
 If you use multiple providers, you can specify as a third argument the provider name to use.
 
-### License
+## License
 
 This bundle is released under MIT license. See the attached file for more informations
 
