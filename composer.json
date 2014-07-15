@@ -18,7 +18,6 @@
     "autoload": {
         "psr-4": {"Takeatea\\TextingBundle\\": "" }
     },
-    "minimum-stability": "dev",
     "extra": {
         "branch-alias": {
             "dev-master": "1.0.x-dev"
