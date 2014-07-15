@@ -14,13 +14,13 @@
     <services>
         <service id="takeatea.texting.manager" class="%takeatea.texting.manager.class%"/>
 
-        <service id="takeatea.texting.provider.alway_ok" class="%takeatea.texting.provider.alway_ok.class%" public="false">
+        <!--service id="takeatea.texting.provider.alway_ok" class="%takeatea.texting.provider.alway_ok.class%" public="false">
             <tag name="takeatea_texting.provider"/>
         </service>
         <service id="takeatea.texting.provider.alway_ko" class="%takeatea.texting.provider.alway_ko.class%" public="false">
             <tag name="takeatea_texting.provider"/>
         </service>
-        <!--service id="takeatea.texting.provider.all_my_sms" class="%takeatea.texting.provider.all_my_sms.class%" public="false">
+        <service id="takeatea.texting.provider.all_my_sms" class="%takeatea.texting.provider.all_my_sms.class%" public="false">
             <tag name="takeatea_texting.provider"/>
 
             <argument>%all_my_sms_login%</argument>
