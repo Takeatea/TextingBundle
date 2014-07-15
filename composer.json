@@ -3,7 +3,7 @@
     "type": "symfony-bundle",
     "keywords": ["sms", "texting", "takeatea"],
     "homepage": "http://www.takeatea.com",
-    "licence": "MIT",
+    "license": "MIT",
     "authors": [
         {
             "name": "Xavier Coureau",
