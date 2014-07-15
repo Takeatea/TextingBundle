@@ -18,6 +18,5 @@
     "autoload": {
         "psr-4": {"Takeatea\\TextingBundle\\": "" }
     },
-    "target-dir": "Takeatea/TextingBundle",
     "minimum-stability": "dev"
 }
