@@ -1,5 +1,6 @@
 {
     "name": "takeatea/texting-bundle",
+    "description": "Symfony integration of the takeatea/texting library",
     "type": "symfony-bundle",
     "keywords": ["sms", "texting", "takeatea"],
     "homepage": "http://www.takeatea.com",
