@@ -1,4 +1,4 @@
-# Take a tea TextingBundle
+# Take a tea TextingBundle [![SensioLabsInsight](https://insight.sensiolabs.com/projects/b5f63f91-a047-4df1-b2b2-b14304883aeb/mini.png)](https://insight.sensiolabs.com/projects/b5f63f91-a047-4df1-b2b2-b14304883aeb)
 This bundle allows Take a tea texting component integration into symfony
 
 ## Installation
